@@ -10,7 +10,6 @@ Write a C program to enter radius of a circle and find its diameter, circumferen
 Write a C program to enter length in centimeter and convert it into meter and kilometer.
 Write a C program to enter temperature in Celsius and convert it into Fahrenheit.
 Write a C program to enter temperature in Fahrenheit and convert to Celsius
-Write a C program to convert days into years, weeks and days.
 Write a C program to find power of any number x ^ y.
 Write a C program to enter any number and calculate its square root.
 Write a C program to enter two angles of a triangle and find the third angle.
