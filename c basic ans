@@ -168,7 +168,7 @@ int main(){
     scanf("%lf", &base);
     printf("Enter exponent: ");
     scanf("%lf", &exponent);
-    result = pow(base, exponent);   // using math.h function
+    result = pow(base, exponent);  
     printf("%.2lf ^ %.2lf = %.2lf\n", base, exponent, result);
     return 0;
 }
@@ -252,6 +252,43 @@ int main() {
     printf("Average Marks = %.2f\n", average);
     printf("Percentage = %.2f%%\n", percentage);
 
+    return 0;
+}
+
+code 16:::::::::::::
+#include <stdio.h>
+int main()
+{
+    float P, T, R, SI;
+    printf("Enter Principal amount (P): ");
+    scanf("%f", &P);
+    printf("Enter Time (T in years): ");
+    scanf("%f", &T);
+    printf("Enter Rate of Interest (R): ");
+    scanf("%f", &R);
+    SI = (P * T * R) / 100;
+    printf("\nSimple Interest = %.2f\n", SI);
+    return 0;
+}
+
+
+code 17::::::::::::
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float P, T, R, CI, Amount;
+    printf("Enter Principal amount (P): ");
+    scanf("%f", &P);
+    printf("Enter Time (T in years): ");
+    scanf("%f", &T);
+    printf("Enter Rate of Interest (R): ");
+    scanf("%f", &R);
+
+    Amount = P * pow((1 + R / 100), T);
+    CI = Amount - P;
+
+    printf("\nCompound Interest = %.2f\n", CI);
+    printf("Total Amount = %.2f\n", Amount);
     return 0;
 }
 
