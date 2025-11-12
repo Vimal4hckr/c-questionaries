@@ -188,3 +188,71 @@ int main() {
 
 
 code 12:::::::::::
+#include <stdio.h>
+int main() {
+    float angle1, angle2, angle3;
+    printf("Enter first angle of triangle: ");
+    scanf("%f", &angle1);
+    printf("Enter second angle of triangle: ");
+    scanf("%f", &angle2);
+    angle3 = 180 - (angle1 + angle2);
+    printf("Third angle of the triangle = %.2f degrees\n", angle3);
+    return 0;
+}
+
+
+code 13:::::::::::
+#include <stdio.h>
+int main() {
+    float base, height, area;
+    printf("Enter base of the triangle: ");
+    scanf("%f", &base);
+    printf("Enter height of the triangle: ");
+    scanf("%f", &height);
+    area = (base * height) / 2;
+    printf("Area of the triangle = %.2f\n", area);
+    return 0;
+}
+
+
+code 14:::::::::::
+#include <stdio.h>
+#include <math.h> 
+int main() {
+    float side, area;
+    printf("Enter the side of the equilateral triangle: ");
+    scanf("%f", &side);
+    area = (sqrt(3) / 4) * (side * side);
+    printf("Area of the equilateral triangle = %.2f\n", area);
+    return 0;
+}
+
+
+code 15:::::::::::
+#include <stdio.h>
+int main() {
+    float sub1, sub2, sub3, sub4, sub5;
+    float total, average, percentage;
+    printf("Enter marks of subject 1: ");
+    scanf("%f", &sub1);
+    printf("Enter marks of subject 2: ");
+    scanf("%f", &sub2);
+    printf("Enter marks of subject 3: ");
+    scanf("%f", &sub3);
+    printf("Enter marks of subject 4: ");
+    scanf("%f", &sub4);
+    printf("Enter marks of subject 5: ");
+    scanf("%f", &sub5);
+
+    total = sub1 + sub2 + sub3 + sub4 + sub5;
+    average = total / 5;
+    percentage = (total / 500) * 100;  // Assuming each subject is out of 100
+
+    printf("\nTotal Marks = %.2f\n", total);
+    printf("Average Marks = %.2f\n", average);
+    printf("Percentage = %.2f%%\n", percentage);
+
+    return 0;
+}
+
+
