@@ -1,0 +1,293 @@
+code 1:::::::::::::
+
+#include <stdio.h>
+int main(){
+    int int;
+    float float;
+    double double;
+    char char;
+    char str[50];
+
+    printf("Enter an integer: ");
+    scanf("%d", &int);
+
+    printf("Enter a float value: ");
+    scanf("%f", &float);
+
+    printf("Enter a double value: ");
+    scanf("%lf", &double);
+
+    printf("Enter a character: ");
+    scanf(" %c", &char); 
+    printf("Enter a string (no spaces): ");
+    scanf("%s", str);
+
+    printf("Integer value: %d\n", int);
+    printf("Float value: %.2f\n", float);
+    printf("Double value: %.4lf\n", double);
+    printf("Character value: %c\n", char);
+    printf("String value: %s\n", str);
+
+    return 0;
+}
+
+code 2:::::::::::::
+
+#include <stdio.h>
+int main(){
+    int num1, num2, sum;
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number:");
+    scanf("%d", &num2);
+    sum = num1 + num2;
+    printf("Sum of %d and %d = %d", num1, num2, sum);
+    return 0;
+}
+
+
+code 3:::::::::::
+
+#include <stdio.h>
+int main(){
+    int num1, num2;
+    int sum, sub, mult, mod;
+    float div;
+    printf("Enter any two numbers: ");
+    scanf("%d%d", &num1, &num2);
+    sum = num1 + num2;
+    sub = num1 - num2;
+    mult = num1 * num2;
+    div = (float)num1 / num2;
+    mod = num1 % num2;
+    printf("SUM = %d\n", sum);
+    printf("DIFFERENCE = %d\n", sub);
+    printf("PRODUCT = %d\n", mult);
+    printf("QUOTIENT = %f\n", div);
+    printf("MODULUS = %d", mod);
+    return 0; 
+}
+
+
+code 4::::::::::::::
+
+#include <stdio.h>
+int main()
+{
+    float length, width, perimeter;
+    printf("Enter length of the rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of the rectangle: ");
+    scanf("%f", &width);
+    perimeter = 2 * (length + width);
+    printf("Perimeter of rectangle = %f units ", perimeter);
+    return 0;
+}
+
+
+code 5::::::::::::::
+
+#include <stdio.h>
+int main(){
+    float length, width, area;
+    printf("Enter length of rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of rectangle: ");
+    scanf("%d", &width);
+    area = length * width;
+    printf("Area of rectangle = %f sq. units ", area);
+    return 0;
+}
+
+
+code 6::::::::::::
+#include <stdio.h>
+
+int main()
+{
+    float radius, diameter, circumference, area;
+    printf("Enter radius of circle: ");
+    scanf("%f", &radius);
+
+    diameter = 2 * radius;
+    circumference = 2 * 3.14 * radius;
+    area = 3.14 * (radius * radius);
+
+    printf("Diameter of circle = %.2f units \n", diameter);
+    printf("Circumference of circle = %.2f units \n", circumference);
+    printf("Area of circle = %.2f sq. units ", area);
+    return 0;
+}
+
+code 7:::::::::::::
+
+#include <stdio.h>
+int main()
+{
+    float cm, meter, km;
+    printf("Enter length in centimeter: ");
+    scanf("%f", &cm);
+
+    meter = cm / 100.0;
+    km    = cm / 100000.0;
+    printf("Length in Meter = %.2f m \n", meter);
+    printf("Length in Kilometer = %.2f km", km);
+    return 0;
+}
+
+code 8::::::::::
+#include <stdio.h>
+int main(){
+    float celsius, fahrenheit;
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+    printf("%.2f Celsius = %.2f Fahrenheit", celsius, fahrenheit);
+    return 0;
+}
+
+code 9:::::::::::::
+#include <stdio.h>
+int main() {
+    float celsius, fahrenheit;
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+    celsius = (fahrenheit - 32) * 5 / 9;
+    printf("%.2f Fahrenheit = %.2f Celsius", fahrenheit, celsius);
+    return 0;
+}
+
+
+code 10::::::::::
+#include <stdio.h>
+#include <math.h>
+int main(){
+    double base, exponent, result;
+    printf("Enter base: ");
+    scanf("%lf", &base);
+    printf("Enter exponent: ");
+    scanf("%lf", &exponent);
+    result = pow(base, exponent);  
+    printf("%.2lf ^ %.2lf = %.2lf\n", base, exponent, result);
+    return 0;
+}
+
+
+code 11:::::::::
+#include <stdio.h>
+#include <math.h>
+int main() {
+    double num, result;
+    printf("Enter any number: ");
+    scanf("%lf", &num);
+    result = sqrt(num);
+    printf("Square root of %.2lf = %.2lf\n", num, result);
+    return 0;
+}
+
+
+code 12:::::::::::
+#include <stdio.h>
+int main() {
+    float angle1, angle2, angle3;
+    printf("Enter first angle of triangle: ");
+    scanf("%f", &angle1);
+    printf("Enter second angle of triangle: ");
+    scanf("%f", &angle2);
+    angle3 = 180 - (angle1 + angle2);
+    printf("Third angle of the triangle = %.2f degrees\n", angle3);
+    return 0;
+}
+
+
+code 13:::::::::::
+#include <stdio.h>
+int main() {
+    float base, height, area;
+    printf("Enter base of the triangle: ");
+    scanf("%f", &base);
+    printf("Enter height of the triangle: ");
+    scanf("%f", &height);
+    area = (base * height) / 2;
+    printf("Area of the triangle = %.2f\n", area);
+    return 0;
+}
+
+
+code 14:::::::::::
+#include <stdio.h>
+#include <math.h> 
+int main() {
+    float side, area;
+    printf("Enter the side of the equilateral triangle: ");
+    scanf("%f", &side);
+    area = (sqrt(3) / 4) * (side * side);
+    printf("Area of the equilateral triangle = %.2f\n", area);
+    return 0;
+}
+
+
+code 15:::::::::::
+#include <stdio.h>
+int main() {
+    float sub1, sub2, sub3, sub4, sub5;
+    float total, average, percentage;
+    printf("Enter marks of subject 1: ");
+    scanf("%f", &sub1);
+    printf("Enter marks of subject 2: ");
+    scanf("%f", &sub2);
+    printf("Enter marks of subject 3: ");
+    scanf("%f", &sub3);
+    printf("Enter marks of subject 4: ");
+    scanf("%f", &sub4);
+    printf("Enter marks of subject 5: ");
+    scanf("%f", &sub5);
+
+    total = sub1 + sub2 + sub3 + sub4 + sub5;
+    average = total / 5;
+    percentage = (total / 500) * 100;  // Assuming each subject is out of 100
+
+    printf("\nTotal Marks = %.2f\n", total);
+    printf("Average Marks = %.2f\n", average);
+    printf("Percentage = %.2f%%\n", percentage);
+
+    return 0;
+}
+
+code 16:::::::::::::
+#include <stdio.h>
+int main()
+{
+    float P, T, R, SI;
+    printf("Enter Principal amount (P): ");
+    scanf("%f", &P);
+    printf("Enter Time (T in years): ");
+    scanf("%f", &T);
+    printf("Enter Rate of Interest (R): ");
+    scanf("%f", &R);
+    SI = (P * T * R) / 100;
+    printf("\nSimple Interest = %.2f\n", SI);
+    return 0;
+}
+
+
+code 17::::::::::::
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float P, T, R, CI, Amount;
+    printf("Enter Principal amount (P): ");
+    scanf("%f", &P);
+    printf("Enter Time (T in years): ");
+    scanf("%f", &T);
+    printf("Enter Rate of Interest (R): ");
+    scanf("%f", &R);
+
+    Amount = P * pow((1 + R / 100), T);
+    CI = Amount - P;
+
+    printf("\nCompound Interest = %.2f\n", CI);
+    printf("Total Amount = %.2f\n", Amount);
+    return 0;
+}
